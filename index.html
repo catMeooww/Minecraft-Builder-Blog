@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Builders</title>
+    <link rel="icon" type="image/png" href="Mc Builder.png" />
+    <script src="main.js"></script>
+    <style>
+        #heading {
+            z-index: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-image: url(dirt_ground.png);
+            background-repeat: repeat-x;
+            background-size: 700px;
+            text-decoration: overline;
+            color: rgb(30, 112, 30);
+            border-bottom: ridge 8px green;
+        }
+
+        body {
+            background-position:bottom;
+            background-size: cover;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        #options {
+            z-index: 20px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 650px;
+            border-right: ridge 10px darkslategray;
+        }
+
+        #options_bg {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 650px;
+        }
+
+        #bottominfo{
+            z-index: 10px;
+            position: fixed;
+            bottom: 1px;
+            left:410px;
+            width: 100%;
+            height: 80px;
+            background-image: url(dirt_ground.png);
+            background-repeat: repeat-x;
+            background-size: 700px;
+            color: white;
+            border-top: ridge 8px rgb(48, 14, 4);
+        }
+        #bottominfo h3{
+            float: left;
+            width: 30%;
+            text-align: left;
+        }
+        #bottominfo img{
+            width: 85px;
+            height: 85px;
+            visibility:hidden;
+        }
+        .options_btn{
+            padding: 5px;
+            width: 300px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.26);
+            color:aliceblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body background="MINECRAFT_img_background.jpg">
+    <div id="heading">
+        <br>
+        <h1>________________________________WELCOME TO MINECRAFT BUILDERS BLOG________</h1>
+        <br>
+    </div>
+    <img id="options_bg" src="StoneBar.png">
+    <div id="options">
+        <h3>Options</h3>
+        <hr>
+        <br><br>
+        <button class="options_btn" onmouseenter="selectedbutton(1)" onclick="redirect(1)"><h5>GO TO BLOG</h5></button>
+        <br><br>
+        <button class="options_btn" onmouseenter="selectedbutton(2)" onclick="redirect(2)"><h5>MORE WEBSITES</h5></button>
+        <br><br>
+        <button class="options_btn" onmouseenter="selectedbutton(3)" onclick="redirect(3)"><h5>MINECRAFT OFFICIAL PAGE</h5></button>
+    </div>
+    <div id="bottominfo">
+        <h3 id="bottomtext">MINECRAFTING!</h3>
+        <img id="bottomimg" src="Minecraft Loading.gif">
+    </div>
+</body>
+
+</html>
