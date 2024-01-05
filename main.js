@@ -7,6 +7,8 @@ function selectedbutton(button) {
             document.getElementById("bottomtext").innerHTML = "View our other minecrafting websites";
         } else if (button == 3) {
             document.getElementById("bottomtext").innerHTML = "Go to Minecraft official website: Minecraft.net";
+        } else if (button == 0){
+            document.getElementById("bottomtext").innerHTML = "THE MINECRAFT BUILDERS";
         }
     }
 }
@@ -21,6 +23,7 @@ function redirect(to) {
             window.location = "blog.html";
         } else if (to == 2) {
             console.log("Redirecting to sites");
+            window.location = "more.html";
         } else if (to == 3) {
             console.log("Redirecting to minecraft.net");
             window.location = "https://www.minecraft.net/pt-pt";

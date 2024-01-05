@@ -6,10 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Builders</title>
     <link rel="icon" type="image/png" href="Mc Builder.png" />
+    <script src="main.js"></script>
+    <style>
+        #heading {
+            z-index: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 130px;
+            background-image: url(dirt_ground.png);
+            background-repeat: repeat-x;
+            background-size: 700px;
+            text-decoration: overline;
+            color: rgb(161, 114, 11);
+            border-bottom: ridge 8px green;
+        }
+
+        body {
+            background-position: bottom;
+            background-size: cover;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        #options {
+            z-index: 20px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 650px;
+            border-right: ridge 10px darkslategray;
+        }
+
+        #options_bg {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 650px;
+        }
+
+        #main_blog {
+            z-index: -1;
+            display:block;
+            border: 1px white solid;
+            position:absolute;
+            top: 125px;
+            left: 410px;
+            width: 925px;
+        }
+
+        .options_btn {
+            padding: 5px;
+            width: 300px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.26);
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+        a{
+            color: aliceblue;
+        }
+
+        #options a {
+            display: block;
+            padding: 5px;
+            width: 300px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.26);
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        #main_blog div {
+            border-bottom: 1px dashed white;
+        }
+
+        #main_blog img {
+            width: 330px;
+            height: 300px;
+            border-style: ridge;
+            border-width: 10px;
+        }
+
+        #DefaultGame img {
+            border-color: green;
+        }
+
+        #InfoGame img {
+            border-color: cyan;
+        }
+
+        #OtherGame img {
+            border-color: yellow;
+        }
+
+        #StoriesGame img {
+            border-color: purple;
+        }
+
+        #ModGame img {
+            border-color: black;
+        }
+    </style>
 </head>
 
-<body>
+<body background="Wood Background.jpg">
+    <div id="heading">
+        <br>
+        <h1>_______________________________________THE MINECRAFT BUILDERS BLOG__________</h1>
+        <br>
+    </div>
+    <img id="options_bg" src="StoneBar.png">
+    <div id="options">
+        <br>
+        <img src="MinecraftBuildersFlag.png" style="width: 95%; height: 15%;"
+            title="Welcome to Minecraft Builders Website">
+        <img src="Minecraft Logo.png">
+        <hr>
+        <center>
+            <a href="#DefaultGame">Default Minecraft</a><br>
+            <a href="#InfoGame">informations & News</a><br>
+            <a href="#OtherGame">Other Minecraft Games</a><br>
+            <a href="#StoriesGame">Minecraft Stories & tutorials</a><br>
+            <a href="#ModGame">Playing Moded</a><br>
+        </center>
+    </div>
+    <div id="main_blog">
+        <h3>In the Minecraft Builders Blog you can see stories, news, informations and a lot of things of the Minecraft
+            Universe</h3>
 
+        <hr color="green">
+        <section id="DefaultGame">
+            <h2 style="color: green;text-align: left; text-decoration: double;">Default Minecraft</h2>
+            <div title="01/05/2024">
+                While playing in a server I built this tower:
+                <br>
+                <img src="BlogAssets/DefaultGame_01052024_tower.jpg">
+            </div>
+        </section>
+
+        <hr color="cyan">
+        <section id="InfoGame">
+            <h2 style="color: cyan;text-align: left; text-decoration: double;">informations and News</h2>
+            <div title="01/05/2024">
+                Snapshot 23w51b of 1.21 disponible in <a href="https://www.minecraft.net/en-us/article/minecraft-snapshot-23w51a">Minecraft Website</a>:
+                <br>
+                <img src="BlogAssets/InfoGame_01052024_23w51b.avif">
+            </div>
+        </section>
+
+        <hr color="yellow">
+        <section id="OtherGame">
+            <h2 style="color: yellow;text-align: left; text-decoration: double;">Other Minecraft Games</h2>
+            <div title="01/05/2024">
+                I created a game where you have to move steve to a secret diamond hidden in the stones:
+                <br>
+                <img src="BlogAssets/OtherGame_01052024_MinecraftAI.png">
+                <br>
+                <a href="https://catmeooww.github.io/MinecraftAi/">Try it here</a>
+            </div>
+        </section>
+
+        <hr color="purple">
+        <section id="StoriesGame">
+            <h2 style="color: purple;text-align: left; text-decoration: double;">Minecraft Stories and Tutorials</h2>
+            <div title="01/05/2024">
+                Trt to make this piston door in your base:
+                <br>
+                <img src="BlogAssets/TutorialGame_01052024_PistonDoorMojangTutorial.avif">
+                <br>
+                <a href="https://www.minecraft.net/en-us/article/how-build-hidden-doors">Tutorial in Minecraft Website</a>:
+            </div>
+        </section>
+
+        <hr color="black">
+        <section id="ModGame">
+            <h2 style="color: black;text-align: left; text-decoration: double;">Moded Minecraft</h2>
+            <div title="01/05/2024">
+                This is the logo of Crafty World mod:
+                <br>
+                <img src="BlogAssets/ModGame_01052024_CraftyWorldBlockLogo.png">
+                <a href="https://www.curseforge.com/minecraft/mc-mods/crafty-world">
+                    <br>
+                    An amazing mod I'm creating that you can download here</a>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
